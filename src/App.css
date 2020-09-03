@@ -1,0 +1,36 @@
+.root{
+  max-width: 400px;
+  max-height: 800px;
+  margin: 0 auto;
+  background-color: lightgray;
+  box-shadow: 0 0 10px lightblue;
+  margin-top: 50px;
+  padding: 15px 50px;
+  
+}
+.account-info{
+  display: flex;
+  background-color: white;
+  box-shadow: 0 0 10px lightgrey;
+  
+  
+  justify-content: space-around; 
+}
+.list{
+  margin: 0px;
+  padding: 0px;
+}
+.list > li{
+  display: flex;
+  justify-content: space-between ;
+  box-shadow: 0 0 10px lightblue;
+  background-color: thistle;
+  padding: 10px 5px;
+  margin: 5px 0;
+
+}
+.transaction-form input{
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px 0;
+}
