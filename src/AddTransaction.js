@@ -6,10 +6,21 @@ export default function AddTransaction() {
     const handleSubmit = (event) =>{
         event.preventDefault();
         console.log(description,amount);
-        addTrans({
-            amount:Number(amount),
-            desc:description
-        })
+        if(amount === 0){
+            alert('you cannot put 0')
+            setDescription('')
+            setAmount(0)
+            return false;
+        }
+        else{
+            addTrans({
+                amount:Number(amount),
+                desc:description
+            })
+            setDescription('')
+            setAmount(0)
+        }
+        
 
     }
 
